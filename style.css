@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --pg-color: hsla(0, 0%, 100%, 0.75);
+  --off-white: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--pg-color);
+}
+
+.container {
+  padding: 1.25rem;
+}
+
+.card {
+  padding: 1.9rem;
+}
+
+.card img {
+  margin-bottom: 1.6rem;
+}
+
+.card h2 {
+  margin-bottom: 1.25rem;
+}
+
+.card p {
+  margin-bottom: 1.2rem;
+}
+
+.card button {
+  background-color: var(--off-white);
+  border: 2px solid var(--off-white);
+  border-radius: 1.9rem;
+  padding: 0.9rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.bright-orange {
+  background-color: var(--bright-orange);
+  color: var(--off-white);
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.bright-orange .btn {
+  color: var(--bright-orange);
+}
+
+.dark-cyan {
+  background-color: var(--dark-cyan);
+  color: var(--off-white);
+}
+
+.dark-cyan .btn {
+  color: var(--dark-cyan);
+}
+
+.very-dark-cyan {
+  background-color: var(--very-dark-cyan);
+  color: var(--off-white);
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.very-dark-cyan .btn {
+  color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--off-white);
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 940px;
+    margin: auto;
+  }
+  .bright-orange {
+    border-radius: 0.6rem 0 0 0.6rem;
+  }
+  .very-dark-cyan {
+    border-radius: 0 0.6rem 0.6rem 0;
+  }
+  .card {
+    padding: 45px;
+  }
+  .card p {
+    margin-bottom: 4.5rem;
+  }
+}
